@@ -1,0 +1,216 @@
+// @import 'bourbon'; // http://bourbon.io/
+@import 'partials/variables'; // colors, fonts etc...
+// @import 'partials/mixins'; // custom mixins
+// @import 'partials/layout'; // responsive grid and media queries
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.bg-primary {
+  background-color: #6981FA !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: {
+    size: 100%;
+    family: 'Cairo', sans-serif;
+  }
+  font-size: 100%;
+  // vertical-align: baseline;
+  // background: $bg-color;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.logo {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.the-header {
+  display: block;
+  margin: 50px auto;
+  margin-bottom: 0px;
+}
+
+
+
+.navigation, .footers {
+	background: $nav-bg;
+	height: 50px;
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Cairo', sans-serif;
+  z-index: 999;
+
+  ul {
+    list-style-type: none;
+    margin: 10px auto;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $nav-links;
+
+    &:hover {
+      color: $nav-links-hover;
+    }
+  }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+}
+
+.footers {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+.table-wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: block;
+  font-family: 'Cairo', sans-serif;
+}
+
+table {
+  width: 100%;
+  max-width: 1300px !important;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Cairo', sans-serif;
+  margin-bottom: 100px !important;
+
+  &.margin-bottom {
+    margin-bottom: 100px;
+  }
+
+  th {
+    font-size: 18px;
+
+    &:last-child {
+      background: #86A6DF;
+    }
+  }
+
+  td {
+
+    &:last-child {
+      font: {
+        weight: 700;
+        size: 20px;
+      }
+    }
+  }
+}
+
+
+
+.tg {
+  font-family: 'Cairo', sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td{
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  vertical-align: middle;
+}
+
+.tg td:last-child {
+  font-weight: 700;
+}
+
+.tg tr {
+    &:hover {
+    background: #86A6DF;
+  }
+}
+.tg th{font-size: 22px; font-weight: 600; font-family: 'Cairo', sans-serif;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+// .tg .tg-yw4l{vertical-align:top}
+
+.tg th:last-child {border:1px solid #000; background-image: linear-gradient(to bottom,#4970ac,#3661a3); color: #fff;} 
+
+
+.table-team-logo {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  padding: 0 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  // top: 10px;
+  left: 5px;
+  right: 0px;
+}
+
+.global-search-icon {
+  top: -5px !important;
+
+}
+
+.global-search-input {
+  font: {
+    family: 'Cairo', sans-serif !important;
+    size: 16px !important;
+  }
+  width: 100% !important;
+}
+
+
+/* Players List */
+
+.players {
+  margin-top: 150px;
+}
+
+
+/* Login */
+
+.login {
+  margin-top: 200px;
+}
+
+
+.header-placeholder {
+  font: {
+    size: 18px;
+  }
+}
